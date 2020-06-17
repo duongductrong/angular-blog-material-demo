@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - **Step 1**: Download this project, to open terminal and press `git clone https://github.com/duongductrong/angular-blog-material-demo`
 - **Step 2**: Open this project `cd blog-app-demo` and `npm install` at blog-app-demo folder to download node_modules
-- **Step 3**: Continue, at current directory `cd blog-api-demo` and press `npm install` to download node_modules of backend api folder
-- **Step 4**: To open/run backend, at directory _blog-app-demo_ press `cd blog-api-demo` and `npm start`
+- **Step 3**: Continue, at current directory `cd angular-blog-material-demo` and press `npm install` to download node_modules of backend api folder
+- **Step 4**: To open/run backend, at directory _blog-app-demo_ press `cd angular-blog-material-demo` and `npm start`
 - **Step 5**: To open/run frontend, at directory _blog-app-demo_ press `ng serve --o or ng serve --open`
 
 ## Development server
