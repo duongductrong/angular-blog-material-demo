@@ -1,0 +1,44 @@
+<form
+  #ngAddPostData="ngForm"
+  (ngSubmit)="onCreatePost(ngAddPostData.value)"
+  class="add-post"
+>
+  <h1 class="add-post__title">Đăng bài</h1>
+  <mat-form-field class="add-post__input">
+    <mat-label>The title for this post</mat-label>
+    <input
+      autofocus
+      matInput
+      placeholder="Ex. Pizza"
+      [(ngModel)]="title"
+      name="title"
+      value="Sushi"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="add-post__input">
+    <mat-label>The image for this post</mat-label>
+    <input
+      matInput
+      placeholder="http://best.png"
+      [(ngModel)]="image"
+      name="image"
+      value="Sushi"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="add-post__input">
+    <mat-label>Type your status</mat-label>
+    <textarea
+      matInput
+      rows="10"
+      placeholder="Ex. It makes me feel..."
+      [(ngModel)]="content"
+      name="content"
+    ></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Đăng bài</button>
+
+  <div class="add-post__seperate"></div>
+</form>

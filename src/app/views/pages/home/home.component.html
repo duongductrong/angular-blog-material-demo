@@ -1,0 +1,31 @@
+<div class="container home">
+  <app-add-post (onCompleted)="onCreated($event)"></app-add-post>
+
+  <mat-card class="card" *ngFor="let post of posts">
+    <mat-card-header>
+      <img
+        mat-card-avatar
+        class="example-header-image"
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+      />
+      <mat-card-title>
+        <a class="home__title" [routerLink]="'/post/' + post.id">{{
+          post.title
+        }}</a>
+      </mat-card-title>
+      <mat-card-subtitle> {{ post.created }} </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="post.image" alt="Photo of a Shiba Inu" />
+    <mat-card-content>
+      <p>
+        {{ post.content }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a [routerLink]="'/post/' + post.id" style="color: black;"
+        ><button mat-button>SEE</button></a
+      >
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

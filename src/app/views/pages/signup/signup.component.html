@@ -1,0 +1,80 @@
+<div class="signup-view">
+  <form
+    #signupData="ngForm"
+    (ngSubmit)="onSignUp(signupData.value)"
+    class="signup-view__form"
+  >
+    <h1 class="signup-view__form__title">Sign up new account</h1>
+
+    <small class="signup-view__form__subtitle"
+      >Tạo tài khoản mới để tham gia cộng đồng của chúng tôi</small
+    >
+    <mat-form-field class="signup-view__form__input">
+      <mat-label> Username* </mat-label>
+      <input
+        matInput
+        placeholder="Username"
+        [(ngModel)]="username"
+        name="username"
+      />
+      <mat-hint
+        [style.color]="errors['username'] !== undefined ? 'red' : 'green'"
+      >
+        {{
+          errors["username"] !== undefined
+            ? errors["username"].message
+            : "To press username"
+        }}
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="signup-view__form__input">
+      <mat-label>Password*</mat-label>
+      <input
+        matInput
+        placeholder="Username"
+        [(ngModel)]="password"
+        name="password"
+      />
+
+      <mat-hint
+        [style.color]="errors['password'] !== undefined ? 'red' : 'green'"
+      >
+        {{
+          errors["password"] !== undefined
+            ? errors["password"].message
+            : "To press password"
+        }}
+      </mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="signup-view__form__input">
+      <mat-label>Fullname*</mat-label>
+      <input
+        matInput
+        placeholder="fullname"
+        [(ngModel)]="fullname"
+        name="fullname"
+      />
+      <mat-hint
+        [style.color]="errors['fullname'] !== undefined ? 'red' : 'green'"
+      >
+        {{
+          errors["fullname"] !== undefined
+            ? errors["fullname"].message
+            : "To press fullname"
+        }}
+      </mat-hint>
+    </mat-form-field>
+
+    <img
+      class="signup-view__form__logo"
+      src="https://i2.wp.com/phocode.com/wp-content/uploads/2017/01/logoAngularjs.png?fit=300%2C300&ssl=1"
+      alt=""
+    />
+
+    <button mat-raised-button color="primary" class="signup-view__form__btn">
+      Đăng ý tài khoản ngay
+    </button>
+  </form>
+</div>

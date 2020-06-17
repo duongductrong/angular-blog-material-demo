@@ -1,0 +1,83 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "title": "Clouds Header Something",
+      "content": "Hello world",
+      "image": "https://cdn6.nzgeo.com/1995/04/26_Clouds_Header01-2000x1301.jpg",
+      "author": 4,
+      "created": "Wed Jun 17 2020 10:40:10 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 2,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "title": "Bài viết test thử api 3",
+      "content": "lowlowwlowlasdasdksdowiejaksdjkasdjksajdkasjdasjdksakdhasjhdsajdhsajdhasjdh",
+      "author": 1,
+      "created": "Tue Jun 16 2020 14:00:37 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 1,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "title": "Bài viết test thử api 3",
+      "content": "lowlowwlowlasdasdksdowiejaksdjkasdjksajdkasjdasjdksakdhasjhdsajdhsajdhasjdh",
+      "author": 1,
+      "created": "Tue Jun 16 2020 14:00:36 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 0,
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "title": "Bài viết test thử api 3",
+      "content": "lowlowwlowlasdasdksdowiejaksdjkasdjksajdkasjdasjdksakdhasjhdsajdhsajdhasjdh",
+      "author": 1,
+      "created": "Tue Jun 16 2020 13:27:22 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 4,
+      "title": "123",
+      "content": "1",
+      "image": "sadmasd,samd",
+      "author": 4,
+      "created": "Wed Jun 17 2020 11:58:16 GMT+0700 (Indochina Time)"
+    }
+  ],
+  "user": [
+    {
+      "id": 0,
+      "username": "duongductrong",
+      "password": "$2a$10$8g2ZFDMwBmqLo10LasQEpuAvJ.ANQ.ZR2x2kH2..xbd0zOALw3Kui",
+      "fullname": "Duong Duc Trong"
+    },
+    {
+      "id": 1,
+      "username": "duongductrong06",
+      "password": "$2a$10$QJtoNZSfbwy8CIlZBEmDjun8jLQ8yG4OpJ5B6Jv6/0jGeiVa9x.9K",
+      "fullname": "Duong Duc Trong"
+    },
+    {
+      "id": 2,
+      "username": "duongductrong10",
+      "password": "$2a$10$4FdF.8E/EDQ9SCQoxgqfx.bMc9Rdsyec2GZ5syjxPIMPGVA4jtKtm",
+      "fullname": "sadasdsa"
+    },
+    {
+      "id": 3,
+      "username": "duongductrong110",
+      "password": "$2a$10$kNXyb6.IvIRMMHu6KSXOCOiyqNlbB.LlydzP5WD5eGUpxZ.fKRWs.",
+      "fullname": "sadasdsa1"
+    },
+    {
+      "id": 4,
+      "username": "1",
+      "password": "$2a$10$2hL2t5x88RjHmK.F4ym4V.qkyTfHDunD2CZCGJk/0vJV6xJNH5xBi",
+      "fullname": "Dương Đức Trọng"
+    },
+    {
+      "id": 5,
+      "username": "asdasd",
+      "password": "$2a$10$fVz1.JuZGIQlUHwGzwxgOOdKzP6kQRXUsjkeWyUlczphX1/hGnHAm",
+      "fullname": "sdsadsad"
+    }
+  ],
+  "count": 0
+}

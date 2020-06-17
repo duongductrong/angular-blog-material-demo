@@ -1,0 +1,39 @@
+.btn {
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+  &-primary {
+    background: #3c77d0;
+    color: white;
+  }
+
+  &-danger {
+    background: #d32f2f;
+    color: white;
+  }
+
+  &-warn {
+    background: #fbc02d;
+    color: white;
+  }
+
+  &-success {
+    background: #66bb6a;
+    color: white;
+  }
+
+  &-blue {
+    background: #172b4d;
+    color: white;
+  }
+
+  &-dark {
+    background: #263238;
+    color: white;
+  }
+}

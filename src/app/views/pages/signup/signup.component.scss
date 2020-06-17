@@ -1,0 +1,33 @@
+.signup-view {
+  &__form {
+    max-width: 500px;
+    margin: 100px auto 0;
+    &__logo {
+      text-align: center;
+      width: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+    &__title {
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+      text-align: center;
+      display: block;
+      color: rgba($color: #000000, $alpha: 0.5);
+    }
+    &__input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &__btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

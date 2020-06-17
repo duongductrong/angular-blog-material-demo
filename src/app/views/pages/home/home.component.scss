@@ -1,0 +1,11 @@
+.home {
+  margin-top: 50px;
+  &__title {
+    text-decoration: none;
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+}
+
+.card {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,51 @@
+<mat-toolbar class="top-bar">
+  <div class="top-bar__left">
+    <a routerLink="/" style="text-decoration: none;"> Angular App </a>
+  </div>
+  <div class="top-bar__right">
+    <a
+      routerLink="login"
+      class="top-bar__right__login"
+      *ngIf="!isAuthenticated"
+    >
+      <small>
+        Đăng nhập
+      </small>
+    </a>
+
+    <a
+      routerLink="signup"
+      class="top-bar__right__signup"
+      *ngIf="!isAuthenticated"
+    >
+      <small>
+        Đăng ký
+      </small>
+    </a>
+
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon
+        color="primary"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        >dashboard</mat-icon
+      >
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>voicemail</mat-icon>
+        <a routerLink="/profile" class="top-bar__right__profile"
+          >Trang cá nhân</a
+        >
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span (click)="logout()">Log out</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

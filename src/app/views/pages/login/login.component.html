@@ -1,0 +1,41 @@
+<div class="login-view">
+  <form
+    #loginData="ngForm"
+    (ngSubmit)="onLogin(loginData.value)"
+    class="login-view__form"
+  >
+    <h1 class="login-view__form__title">Đăng nhập</h1>
+
+    <small class="login-view__form__subtitle"
+      >Tạo tài khoản mới để tham gia cộng đồng của chúng tôi</small
+    >
+    <mat-form-field class="login-view__form__input">
+      <mat-label> Username* </mat-label>
+      <input
+        matInput
+        placeholder="Username"
+        [(ngModel)]="username"
+        name="username"
+      />
+      <mat-hint>Errors appear instantly!</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="login-view__form__input">
+      <mat-label>Password*</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+        name="password"
+      />
+      <mat-hint>Errors appear instantly!</mat-hint>
+    </mat-form-field>
+
+    <mat-error> {{ error }} </mat-error>
+
+    <button mat-raised-button color="primary" class="login-view__form__btn">
+      Đăng nhập ngay
+    </button>
+  </form>
+</div>

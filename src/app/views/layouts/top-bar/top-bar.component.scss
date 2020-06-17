@@ -1,0 +1,27 @@
+.top-bar {
+  &__left {
+  }
+  &__right {
+    margin-left: auto;
+
+    &__signup {
+      //   transform: translateY(4px);
+      display: inline-block;
+      color: black;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    &__login {
+      //   transform: translateY(4px);
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+    }
+
+    &__profile {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
