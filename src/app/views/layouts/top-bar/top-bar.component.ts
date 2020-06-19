@@ -23,7 +23,8 @@ export class TopBarComponent implements OnInit {
 
   logout(): void {
     if (this.userService.logout()) {
-      this.router.navigate(["/login"])
+      // this.router.navigate(["/login"])
+      window.location.href = "/login"
     }
   }
 
